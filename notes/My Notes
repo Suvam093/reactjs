@@ -1,0 +1,31 @@
+USESTATE is used to set the data or we can say to update the data on the ui 
+It helps us to update the data at multiple places with ease
+
+USEEFFECT is used to perform a action whenever a component is mounted in our case we can use 
+useEffect whenever we are loading into a page to perform a task like fetching api's
+
+USEID is used to generate unique id which can be used in mapping 
+but we should not use the useId hook for 
+
+
+USECONTEXT is used to create a global variable that can be used by any of the components
+Its mostly used to manage the states
+and it is used so that we can update the state from where we want to 
+if we create a global file and export the data then the state will be updated from wjere we dont want it to and thats why we use useContext hook 
+
+import 'React' from react
+const userContext= useContext()
+export default userContext
+
+context ak variable provide hi toh kr rha ha, Toh harr ak context ak provider hi hota ha
+
+ab context me ko use krne par uske andar jitne bhi components ha woh uss context ka access le sakte ha
+
+
+
+
+ak usercontext file banana ha usme ak funtion call hoga jisme export default kr dena ha
+phit ak usercontextprovider hoga jo provide krega
+
+ab iss provider me ak children pass hoga function me jo return ho jata ha as it is bus ak value le lena hota ha user , set user kr ke jo hume update ke display krna hota ha (global variable se)
+
